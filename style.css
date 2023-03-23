@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: rgb(179, 55, 55);
+    background-color: rgb(12, 12, 12);
 }
 
 header h1 {
@@ -16,7 +16,7 @@ header h1 {
 }
 
 nav {
-    background-color:rgb(252, 249, 249);
+    background-color:rgb(168, 18, 18);
     text-align: left;
     padding: 10px;
 
