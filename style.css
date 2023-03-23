@@ -1,0 +1,56 @@
+body {
+    width: 700px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+}
+
+header {
+    background-color: lightgray;
+}
+
+header h1 {
+    height: 80px;
+    line-height: 80px;
+}
+
+nav {
+    background-color:darkgray;
+    text-align: left;
+    padding: 10px;
+
+nav a{
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none
+}
+
+nav a: hover{
+    background-color: lightgray;
+    color: black;
+}
+
+#featured {
+    background: lightgray;
+float:left;
+width:200px;
+}
+
+#content {
+    float: right;
+    width: 500px;
+}
+
+#extras{
+    background: lightgray;
+    float: left;
+    width: 200px;
+}
+
+footer{
+    clear:both;
+    text-align: center;
+    background-color: darkgray;
+}
