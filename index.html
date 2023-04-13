@@ -1,58 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <meta charset="UTF-8">
-  <title>Mambaz</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Mambaz Boxing</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio site showing off website developed">
+  <meta name="keywords" content="web technologies, web design, web skills">
+  <meta name="author" content="Put Your Name HEre!">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
-<head>
-<style> 
-body {
-  background-image: url("Mambaz_logo.jpg"),url("Trainer.jpg") ;
-    width: 1000, 400;
-    height: 1400, 500;
-  background-color: #0a0a0a;
-  background-position: left top, right top;
-  background-repeat: no-repeat;  
-}
-</style>
-</head>
+
 
 <body>
-    <p>Document Body</p>
-</body>
-</html>
-
-<body>
-    <header>
-      <h1>Mambaz</h1>
-      <nav>
-        <a href="about.html">About</a> |
-        <a href="#book">Book a class</a> |
-        <a href="#Times">Class Times</a> |
-        <a href="#view">View class bookings</a> |
-
-      </nav>
+     
+  
+   <section class="hero-image">
+      <div class="hero-text">
+        <h1 style="font-size:50px">Mambaz Boxing</h1>
+        
+        <p>“You are never alone at Mambaz".</p>
       
-    <header>
+          
+        <nav>
+          <a href="about.html">About</a> |
+          <a href="#book">Book a class</a> |
+          <a href="#Times">Class Times</a> |
+          <a href="#view">View class bookings</a> |
+  
+        </nav>
+  
+        <br>
+        <button id="speak-button">Click to speak</button>
+        
+      </div>
+    </section> 
 
-    <section id="book">
+     
+    <div class="column" style="background-color:#ffffff;">
+      
       <h2>Book a class</h2>
       <label for="booking">Please select a class</label>
       <input type="date" name="booking" id="bookingclass">
 
       <style> 
-      input[type=submit], input[type=reset] {
-          background-color: black;
-          border: none;
-          color: rgb(250, 246, 246);
-          padding: 16px 32px;
-          text-decoration: none;
-          margin: 4px 2px;
-          cursor: pointer;
-      }
+      
       </style>
       </head>
       <body>
@@ -61,19 +54,48 @@ body {
       <input type="submit" value="Submit">
       
       </body>
-    </section>
 
-    <section id="Times">
+
+
+     
+    </div>
+    <div class="column" style="background-color:#ffffff;">
+      
+      
+      
+        <img src="images/mambaz.jpg" alt="webdesign" style="width:100%; text-decoration:none;"
+        onmouseover="showInfo('contact');" onmouseout="hideInfo('contact');">
+      
+      
+
+    </div>
+    <div class="column" style="background-color:#ffffff;">
       <h2>Class Times</h2>
       <p> Monday 6:15PM Coach Jerry</p>
       <p> Tuesday 6:15PM Coach Shane</p>
       <p>Wednesday 6:15PM Coach Jerry</p>
       <p>Thursday 6:15PM Coach Shane</p>
       <p></p>
-    </section>
+      
+    </div>
+    
+  </div>
+  
 
+
+
+       
+ 
+   
+  
+  </body>
+  </html>
+     
+            
+       
+
+
+  <script src="js/main.js"> </script>
 </body>
 </html>
-
-
 
