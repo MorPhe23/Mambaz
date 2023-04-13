@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>View Bookings</title>
+  </head>
+  <body>
+    <h1>View Bookings</h1>
+    <p>Select a date to view the number of people who have booked:</p>
+    <input type="date" id="view-date">
+    <button id="view-btn">View</button>
+    <div id="view-results"></div>
+    <script>
+      // Get the view button element
+      const viewBtn = document.getElementById("view-btn");
+      
+      // Add event listener for when the view button is clicked
+      viewBtn.addEventListener("click", function() {
+        // Get the selected date from the input element
+        const viewDate = document.getElementById("view-date").value;
+        
+        // Load the bookings from the JSON file
+        let bookings = [];
+        if (localStorage.getItem("bookings")) {
+          bookings = JSON.parse(localStorage.getItem("bookings"));
+        }
+        
+        // Count the number of bookings for the selected date
+        const count = bookings.filter(booking => booking === viewDate).length;
+        
+        // Display the results
+        const viewResults = document.getElementById("view-results");
+        viewResults.innerHTML = "<p>" + count + " people have booked on " + viewDate + "</p>";
+      });
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
