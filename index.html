@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Portfolio site showing off website developed">
     <meta name="keywords" content="web technologies, web design, web skills">
-    <meta name="author" content="Put Your Name HEre!">
+    <meta name="author" content="Put Your Name Here!">
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
 
@@ -20,8 +20,6 @@
           <a href="#book">Book a class</a> |
           <a href="#Times">Class Times</a> |
           <a href="#view.html">View class bookings</a> |
-          
-
         </nav>
         <br>
         <button id="speak-button">Click to speak</button>
@@ -31,8 +29,15 @@
     <div class="column" style="background-color:#ffffff;">
       <h2>Book a class</h2>
       <form action="process.php" method="POST">
-        <label for="booking">Please select a class</label>
+        <label for="booking">Please select a class date:</label>
         <input type="date" name="booking" id="bookingclass">
+        <br><br>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+        <br><br>
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" name="mobile" id="mobile">
+        <br><br>
         <input type="submit" value="Submit">
       </form>
     </div>
@@ -54,6 +59,7 @@
     <script src="js/main.js"> </script>
   </body>
 </html>
+
 
 
 
